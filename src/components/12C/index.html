@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from hp12c.professorlucassilva.com.br/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Apr 2022 21:12:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>HP12C da Carol</title>
+    <meta name="description" content="Emulador da Calculadora HP12c Online">
+    <script src="assets/hp12c.js" type="text/javascript"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KDDVP4S');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <div id="pointer_div" style="position: relative; height: 282px; width: 450px;">
+
+    <img src="assets/hp12-shark.png" style="position: absolute; left: 0px; top:0px;" id="cross" onclick="key_pressed(event)" alt="">
+    <div style="z-index:1; position:absolute; left: 87px; top:24px; font-weight: bold; font-size: 16px; font-family: sans-serif;">
+    <span id="display"></span>
+    </div>
+    <div style="z-index:1; position:absolute; left: 90px; top:48px; font-size: 9px; font-family: sans-serif;">
+    <span id="modifier"></span>
+    </div>
+    <div style="z-index:1; position:absolute; left: 193px; top:48px; font-size: 9px; font-family: sans-serif;">
+    <span id="begin"></span>
+    </div>
+    <div style="z-index:1; position:absolute; left: 231px; top:48px; font-size: 9px; font-family: sans-serif;">
+    <span id="dmyc"></span>
+    </div>
+    <div style="z-index:1; position:absolute; left: 141px; top:48px; font-size: 9px; font-family: sans-serif;">
+    <span id="pgrm"></span>
+    </div>
+
+    <img id="lcd0a" src="assets/lcda.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 89px;">
+    <img id="lcd0b" src="assets/lcdb.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 89px;">
+    <img id="lcd0c" src="assets/lcdc.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: hidden; left: 89px;">
+    <img id="lcd0d" src="assets/lcdd.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 89px;">
+    <img id="lcd0e" src="assets/lcde.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 89px;">
+    <img id="lcd0f" src="assets/lcdf.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 89px;">
+    <img id="lcd0g" src="assets/lcdg.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 89px;">
+    <img id="lcd0p" src="assets/lcdp.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: hidden; left: 89px;">
+    <img id="lcd0t" src="assets/lcdt.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 89px;">
+
+    <img id="lcd1a" src="assets/lcda.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 107px;">
+    <img id="lcd1b" src="assets/lcdb.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: hidden; left: 107px;">
+    <img id="lcd1c" src="assets/lcdc.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 107px;">
+    <img id="lcd1d" src="assets/lcdd.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 107px;">
+    <img id="lcd1e" src="assets/lcde.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: hidden; left: 107px;">
+    <img id="lcd1f" src="assets/lcdf.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 107px;">
+    <img id="lcd1g" src="assets/lcdg.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 107px;">
+    <img id="lcd1p" src="assets/lcdp.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 107px;">
+    <img id="lcd1t" src="assets/lcdt.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 107px;">
+
+    <img id="lcd2a" src="assets/lcda.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: hidden; left: 125px;">
+    <img id="lcd2b" src="assets/lcdb.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 125px;">
+    <img id="lcd2c" src="assets/lcdc.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 125px;">
+    <img id="lcd2d" src="assets/lcdd.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 125px;">
+    <img id="lcd2e" src="assets/lcde.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: hidden; left: 125px;">
+    <img id="lcd2f" src="assets/lcdf.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 125px;">
+    <img id="lcd2g" src="assets/lcdg.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: hidden; left: 125px;">
+    <img id="lcd2p" src="assets/lcdp.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: hidden; left: 125px;">
+    <img id="lcd2t" src="assets/lcdt.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 125px;">
+
+    <img id="lcd3a" src="assets/lcda.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 143px;">
+    <img id="lcd3b" src="assets/lcdb.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 143px;">
+    <img id="lcd3c" src="assets/lcdc.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 143px;">
+    <img id="lcd3d" src="assets/lcdd.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 143px;">
+    <img id="lcd3e" src="assets/lcde.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: hidden; left: 143px;">
+    <img id="lcd3f" src="assets/lcdf.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 143px;">
+    <img id="lcd3g" src="assets/lcdg.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 143px;">
+    <img id="lcd3p" src="assets/lcdp.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 143px;">
+    <img id="lcd3t" src="assets/lcdt.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 143px;">
+
+    <img id="lcd4a" src="assets/lcda.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 161px;">
+    <img id="lcd4b" src="assets/lcdb.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: hidden; left: 161px;">
+    <img id="lcd4c" src="assets/lcdc.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 161px;">
+    <img id="lcd4d" src="assets/lcdd.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 161px;">
+    <img id="lcd4e" src="assets/lcde.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 161px;">
+    <img id="lcd4f" src="assets/lcdf.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: hidden; left: 161px;">
+    <img id="lcd4g" src="assets/lcdg.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 161px;">
+    <img id="lcd4p" src="assets/lcdp.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 161px;">
+    <img id="lcd4t" src="assets/lcdt.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 161px;">
+
+    <img id="lcd5a" src="assets/lcda.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 179px;">
+    <img id="lcd5b" src="assets/lcdb.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 179px;">
+    <img id="lcd5c" src="assets/lcdc.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 179px;">
+    <img id="lcd5d" src="assets/lcdd.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 179px;">
+    <img id="lcd5e" src="assets/lcde.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 179px;">
+    <img id="lcd5f" src="assets/lcdf.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 179px;">
+    <img id="lcd5g" src="assets/lcdg.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 179px;">
+    <img id="lcd5p" src="assets/lcdp.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 179px;">
+    <img id="lcd5t" src="assets/lcdt.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 179px;">
+
+    <img id="lcd6a" src="assets/lcda.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 197px;">
+    <img id="lcd6b" src="assets/lcdb.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 197px;">
+    <img id="lcd6c" src="assets/lcdc.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 197px;">
+    <img id="lcd6d" src="assets/lcdd.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 197px;">
+    <img id="lcd6e" src="assets/lcde.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 197px;">
+    <img id="lcd6f" src="assets/lcdf.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 197px;">
+    <img id="lcd6g" src="assets/lcdg.gif" alt="" style="z-index: 1; position: absolute; top: 30px; visibility: visible; left: 197px;">
+    <img id="lcd6p" src="assets/lcdp.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 197px;">
+    <img id="lcd6t" src="assets/lcdt.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 197px;">
+
+    <img id="lcd7a" src="assets/lcda.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 215px;">
+    <img id="lcd7b" src="assets/lcdb.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 215px;">
+    <img id="lcd7c" src="assets/lcdc.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 215px;">
+    <img id="lcd7d" src="assets/lcdd.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 215px;">
+    <img id="lcd7e" src="assets/lcde.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 215px;">
+    <img id="lcd7f" src="assets/lcdf.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 215px;">
+    <img id="lcd7g" src="assets/lcdg.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 215px;">
+    <img id="lcd7p" src="assets/lcdp.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 215px;">
+    <img id="lcd7t" src="assets/lcdt.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 215px;">
+
+    <img id="lcd8a" src="assets/lcda.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 233px;">
+    <img id="lcd8b" src="assets/lcdb.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 233px;">
+    <img id="lcd8c" src="assets/lcdc.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 233px;">
+    <img id="lcd8d" src="assets/lcdd.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 233px;">
+    <img id="lcd8e" src="assets/lcde.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 233px;">
+    <img id="lcd8f" src="assets/lcdf.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 233px;">
+    <img id="lcd8g" src="assets/lcdg.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 233px;">
+    <img id="lcd8p" src="assets/lcdp.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 233px;">
+    <img id="lcd8t" src="assets/lcdt.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 233px;">
+
+    <img id="lcd9a" src="assets/lcda.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 251px;">
+    <img id="lcd9b" src="assets/lcdb.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 251px;">
+    <img id="lcd9c" src="assets/lcdc.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 251px;">
+    <img id="lcd9d" src="assets/lcdd.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 251px;">
+    <img id="lcd9e" src="assets/lcde.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 251px;">
+    <img id="lcd9f" src="assets/lcdf.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 251px;">
+    <img id="lcd9g" src="assets/lcdg.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 251px;">
+    <img id="lcd9p" src="assets/lcdp.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 251px;">
+    <img id="lcd9t" src="assets/lcdt.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 251px;">
+
+    <img id="lcd10a" src="assets/lcda.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 269px;">
+    <img id="lcd10b" src="assets/lcdb.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 269px;">
+    <img id="lcd10c" src="assets/lcdc.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 269px;">
+    <img id="lcd10d" src="assets/lcdd.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 269px;">
+    <img id="lcd10e" src="assets/lcde.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 269px;">
+    <img id="lcd10f" src="assets/lcdf.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 269px;">
+    <img id="lcd10g" src="assets/lcdg.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 269px;">
+    <img id="lcd10p" src="assets/lcdp.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 269px;">
+    <img id="lcd10t" src="assets/lcdt.gif" alt="" style="z-index:1; position:absolute; top: 30px; visibility: hidden; left: 269px;">
+    </div>
+
+    <script type="text/javascript" defer="">
+    Init_hp12c();
+    </script>
+    <div id="931f194578626a81105c1cd3c60992db"></div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDDVP4S"
+            height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+
+<!-- Mirrored from hp12c.professorlucassilva.com.br/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Apr 2022 21:12:09 GMT -->
+</html>
