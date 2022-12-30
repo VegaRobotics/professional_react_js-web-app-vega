@@ -5,7 +5,7 @@ export default function FCorte() {
   const [nro1, setNro1] = useState(0);
   const [nro2, setNro2] = useState(0);
   const [nro3, setNro3] = useState(0);
-  const [nro4, setNro4] = useState(0);
+  // const [nro4, setNro4] = useState(0);
   const [resultado, setResultado] = useState(0);
   // const [operacao, setOperacao] = useState('Somar');
 
