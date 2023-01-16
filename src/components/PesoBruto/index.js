@@ -22,7 +22,7 @@ export default function PBruto() {
     <S.Container>
           <S.Calc>
             <h1>Calculadora de Peso Bruto para Materiais Baixo Carbono</h1>
-            <label>Espessura (mm)</label>
+            <label>Passo (mm)</label>
             <input 
               type="number"
               value={nro1}
