@@ -6,7 +6,7 @@ function Budget() {
     return (
         <S.Container>
             <S.Text>
-               <h2>Contate o Departamento de Vendas agora mesmo!</h2>
+               <h2>Contate Vendas agora mesmo!</h2>
                <p>Desenvolvimento e Integração de Soluções de Engenharia, Tecnologia e Robótica</p>
             </S.Text>
             <S.Button>
