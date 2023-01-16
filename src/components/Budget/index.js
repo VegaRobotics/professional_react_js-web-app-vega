@@ -6,7 +6,7 @@ function Budget() {
     return (
         <S.Container>
             <S.Text>
-               <h2>Contato para o Departametno de Vendas 
+               <h2>Contate o Departamento de Vendas agora mesmo  
                 <a href="tel:+55 11 5199-8949"> +55 11 5199-8949</a></h2>
                <p>Desenvolvimento e Integração de Soluções de Engenharia, Tecnologia e Robótica</p>
             </S.Text>
