@@ -5,25 +5,26 @@ function LQuotes() {
     return (
         <S.Container>
             <S.Text>
-                <h1>Get A Quote</h1>
-                <h2>Machine Details</h2>
-                <h3>Machine Type *</h3>
+                <h1>Faça uma Cotação</h1>
+                <h2>Serviços Ofericidos</h2>
+                <h3>Detalhes dos Serviços*</h3>
                 <select name="select">
-                    <option value="Rocker Arm Welder">Rocker Arm Welder</option>
-                    <option value="Press Type Welder" selected>Press Type Welder</option>
-                    <option value="Bench Welder">Bench Welder</option>
-                    <option value="Seam Welder">Seam Welder</option>
-                    <option value="Butt Welder">Butt Welder</option>
-                    <option value="Mid-Freq Inverter">Mid-Freq Inverter</option>
-                    <option value="Multi-Spot Welder">Multi-Spot Welder</option>
-                    <option value="Gun Welder">Gun Welder</option>
-                    <option value="Miniature Gun Welder">Miniature Gun Welder</option>
-                    <option value="Special Application Welder">Special Application Welder</option>
-                    <option value="Reconditioned Welder">Reconditioned Welder</option>
+                    <option value="Rocker Arm Welder" selected>Estampos Progressivos</option>
+                    <option value="Press Type Welder">Estampo Individuais</option>
+                    <option value="Press Type Welder">Máquinas de Solda</option>
+                    <option value="Press Type Welder">Máquinas de Montagem</option>
+                    <option value="Press Type Welder">Máquinas Especiais</option>
+                    <option value="Bench Welder">Dispositivos de Solda Resistência</option>
+                    <option value="Seam Welder">Dispositivo de Solda MIG</option>
+                    <option value="Butt Welder">Aplicações WEB</option>
+                    <option value="Mid-Freq Inverter">Aplicações Mobile</option>
+                    <option value="Multi-Spot Welder">Automações de Sistemas</option>
+                    <option value="Gun Welder">Integração de Sistemas</option>
+                    <option value="Miniature Gun Welder">Integração Robótica</option>
                 </select>
             </S.Text>
             <S.Button>
-               <button>SUBMIT</button>
+               <button>ORÇAR</button>
             </S.Button>
         </S.Container>
     );

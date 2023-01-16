@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 export const Container= styled.div`
+    position: relative;
     display: flex;
     width: 100%;
-    height: 5vmin;
+    height: 15vmin;
     background: #161a1e;
-
-    position: bottom;
     bottom: 10px;
     align-items: center;
 
@@ -28,7 +27,7 @@ export const Center = styled.div`
     display: row;
     align-items: center;
     width: 10%;
-    height: 12vmin;
+    margin-bottom: 10vmin;
     pointer-events: none;
     background: #161a1e;
     border-radius: 100px;
@@ -47,7 +46,6 @@ export const Center = styled.div`
 }
 `
 
-
 export const LeftSide = styled.div`
     width: 100%;
     height: 100px;
@@ -57,18 +55,27 @@ export const LeftSide = styled.div`
     padding-left: 20px;
 
 img {
-    width: 80px;
-    height: 80px;
+    width: 30px;
+    padding: 10px;
+    /* height: 80px; */
+    &:hover{
+        transform: scale(1.1);
+        opacity: 20;
+        transition: 1s;
+    }
 }
 `
 
 export const RightSide = styled.div`
     width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 15px;
+    /* height: 50px; */
+    /* display: inline; */
+    /* background-color: white; */
+    /* justify-content: row; */
+    text-align: right;
+    align-content: space-evenly;
+    padding-right: 20px;
+    
 
 img {
     width: 80px;

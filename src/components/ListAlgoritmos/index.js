@@ -6,9 +6,9 @@ function ListAlgoritmos() {
   return (
     <S.Container>
       <S.Buttons>
-          <Link to="/pesobruto"><button>Gross Weight Carbon Steel</button></Link>
-          <Link to="/forcacorte"><button>Stamping Force for Low Carbon Steel</button></Link>
-          <Link to="/forcadobra"><button>Bending Force</button></Link>
+          <Link to="/pesobruto"><button>Calculadora de Peso Bruto</button></Link>
+          <Link to="/forcacorte"><button>Calculadora de Força de Corte</button></Link>
+          <Link to="/forcadobra"><button>Calculadora de Força de Dobra</button></Link>
       </S.Buttons>
     </S.Container>
   );

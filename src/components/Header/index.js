@@ -14,16 +14,16 @@ function Header() {
         </a>
       </S.LeftSide>
       <S.Center>
-        <Link to="/">Machines</Link>
-        <Link to="/">Components</Link>
-        <Link to="/">Services</Link>
-        <Link to="/">Support</Link>
-        <Link to="/algoritmos">Algorithms</Link>
-        <Link to="/">Contact</Link>
-        <a href="https://rwelectrodes.com/" target="_blank" rel="noreferrer" >
+        <Link to="/">Engenharia</Link>
+        <Link to="/">Tecnologia</Link>
+        <Link to="/">Robótica</Link>
+        <Link to="/">Suporte</Link>
+        <Link to="/algoritmos">Algoritimos</Link>
+        <Link to="/">Contato</Link>
+        {/* <a href="https://rwelectrodes.com/" target="_blank" rel="noreferrer" >
           <span>Shop</span>
-        </a>
-        <Link to="/vixem">BETA</Link>
+        </a> */}
+        {/* <Link to="/vixem">BETA</Link> */}
       </S.Center>
       <S.RightSide>
         <a href="https://wa.me/+551151998949" target="_blank" rel="noreferrer" >

@@ -5,16 +5,18 @@ import * as S from './styles';
 function Video() {
     return (
         <S.Container>
-            <S.Text>
-                <span>Innovators in industrial automation 
-                    <br/>
-                        technology design and consulting</span>
-            </S.Text>
             <S.SVideo>
                 <video id="videoBanner" className="SVideo" autoPlay muted loop>
                     <source src={VideoS} type='video/mp4'></source>
                 </video>
+                
             </S.SVideo>
+            <S.SText>
+            <span>Desenvolvimento e Integração de Soluções
+                    <br/>
+                        de Engenharia, Tecnologia e Robótica</span>
+            </S.SText>
+            
         </S.Container>
     );
 }
