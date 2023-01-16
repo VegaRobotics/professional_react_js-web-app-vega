@@ -21,13 +21,13 @@ export default function FCorte() {
   return (
     <S.Container>
           <S.Calc>
-            <h1>Stamping Force for Low Carbon Steel</h1>
-            <label>Cutting Perimeter (mm)</label>
+            <h1>Calculadora de Força de Corte para Materiais Baixo Carbono</h1>
+            <label>Perímetro de Corte (mm)</label>
             <input 
               type="number"
               value={nro1}
               onChange={(e) => setNro1(e.target.value)}/>      
-            <label>Thickness  (mm)</label>
+            <label>Espessura  (mm)</label>
               <input 
                 type="number"
                 value={nro2}
@@ -37,12 +37,12 @@ export default function FCorte() {
                 type="number"
                 value={nro3}
                 onChange={(e) => setNro3(e.target.value)}/>  */}
-            <label>Shear Stress for Low Carbon Steel (kg/mm²)</label>
+            <label>Tensão de cisalhamento para materiais baixo carbono (kg/mm²)</label>
              <input 
                 type="number"
                 value={40}
                 onChange={(e) => setNro4(e.target.value)}/> 
-            <span>The gross weight is: {resultado} Toneladas</span>     
+            <span>A força de corte é de: {resultado} Toneladas</span>     
           </S.Calc>
     </S.Container>
   );

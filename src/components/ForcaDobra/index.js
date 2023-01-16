@@ -21,18 +21,18 @@ export default function FCorte() {
   return (
     <S.Container>
           <S.Calc>
-            <h1>Bending Force</h1>
-            <label>Material Rupture Limit (MPa)</label>
+            <h1>Calculadora de Força de Dobra</h1>
+            <label>Limite de ruptura do material (MPa)</label>
             <input 
               type="number"
               value={nro1}
               onChange={(e) => setNro1(e.target.value)}/>      
-            <label>Warp Perimeter (mm)</label>
+            <label>Perimetro de dobra (mm)</label>
               <input 
                 type="number"
                 value={nro2}
                 onChange={(e) => setNro2(e.target.value)}/>      
-            <label>Thickness (mm)</label>
+            <label>Espessura (mm)</label>
              <input 
                 type="number"
                 value={nro3}
@@ -42,8 +42,8 @@ export default function FCorte() {
                 type="number"
                 value={40}
                 onChange={(e) => setNro4(e.target.value)}/>  */}
-            <span>The bending effort will be: {resultado} Toneladas</span>     
-            <span>The value of the plate press will be:: {(((nro1*nro2*nro3*0.00010197)*1/3)*0.10)} Toneladas</span>     
+            <span>O esfoço de dobra será de: {resultado} Toneladas</span>     
+            <span>O esfoço para o prensa chapa será de: {(((nro1*nro2*nro3*0.00010197)*1/3)*0.10)} Toneladas</span>     
           </S.Calc>
     </S.Container>
   );
