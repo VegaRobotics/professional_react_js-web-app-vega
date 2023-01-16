@@ -14,7 +14,7 @@ function Header() {
         </a>
       </S.LeftSide>
       <S.Center>
-        <Link to="/">Machines</Link>
+        <Link to="/">Hello World</Link>
         <Link to="/">Components</Link>
         <Link to="/">Services</Link>
         <Link to="/">Support</Link>
