@@ -10,6 +10,7 @@ function ListAlgoritmos() {
           <Link to="/forcacorte"><button>Calculadora de Força de Corte</button></Link>
           <Link to="/forcadobra"><button>Calculadora de Força de Dobra</button></Link>
           <Link to="/energyconsumption"><button>Calculadora Consumo de Energia</button></Link>
+          <Link to="/stopWatch"><button>Cronometro</button></Link>
       </S.Buttons>
     </S.Container>
   );
