@@ -6,7 +6,7 @@ function Budget() {
     return (
         <S.Container>
             <S.Text>
-               <h2>Contate Vendas agora mesmo!</h2>
+               <h2>Contate Vendas agora mesmo!!</h2>
                 {/* <a href="https://wa.me/+551151998949"> +55 11 5199-8949</a></h2> */}
                <p>Desenvolvimento e Integração de Soluções de Engenharia, Tecnologia e Robótica</p>
             </S.Text>
