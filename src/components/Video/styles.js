@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
-    width: 100%;    
+    width: 100%;   
+    /* height: calc(100vh - 70px); */
+    /* overflow-y: scroll;  */
     `;
 export const SText = styled.div`
     display: flex;
