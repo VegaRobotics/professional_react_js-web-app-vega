@@ -7,7 +7,8 @@ function Budget() {
         <S.Container>
             <S.Text>
                <h2>Contato para o Departamento de Vendas 
-                <a href="https://wa.me/+551151998949"> +55 11 5199-8949</a></h2>
+                /*<a href="https://wa.me/+551151998949"> +55 11 5199-8949</a></h2>*/
+               <h2>Contate Vendas agora mesmo!</h2>
                <p>Desenvolvimento e Integração de Soluções de Engenharia, Tecnologia e Robótica</p>
             </S.Text>
             <S.Button>
