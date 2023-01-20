@@ -8,6 +8,7 @@ const PesoBruto = lazy(() => import('./routes/PesoBruto'));
 const ForcaCorte = lazy(() => import('./routes/ForcaCorte'));
 const Quotes = lazy(() => import('./routes/Quotes'));
 const ForcaDobra = lazy(() => import('./routes/ForcaDobra'));
+const ConsumoEnergia = lazy(() => import('./routes/EnergyConsumption'));
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
          <Route path="/forcacorte" element={<ForcaCorte />} />
          <Route path="/quotes" element={<Quotes />} />
          <Route path="/forcadobra" element={<ForcaDobra />} />
+         <Route path="/energyconsumption" element={<ConsumoEnergia />} />
        </Routes>
       </Suspense>
     </Router>
