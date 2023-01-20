@@ -6,7 +6,7 @@ function LQuotes() {
         <S.Container>
             <S.Text>
                 <h1>Faça uma Cotação</h1>
-                <h2>Serviços Ofericidos</h2>
+                <h2>Serviços Oferecidos</h2>
                 <h3>Detalhes dos Serviços*</h3>
                 <select name="select">
                     <option value="Rocker Arm Welder" selected>Estampos Progressivos</option>
