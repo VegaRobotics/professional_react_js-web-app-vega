@@ -28,6 +28,11 @@ export default function FCorte() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [nro1,nro2,nro3,nro4])
 
+  // if(nro1 === '' || nro2 === '' || nro3 === '' || nro4 === '') {
+  //   alert("Preencha todos os campos")
+  //   return;
+  // "Somente daria bom, caso eu não tivesse o UseEffect"}
+
   return (
     <S.Container>
           <S.Calc>
