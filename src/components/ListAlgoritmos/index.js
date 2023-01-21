@@ -5,12 +5,16 @@ import { Link } from 'react-router-dom';
 function ListAlgoritmos() {
   return (
     <S.Container>
+      <S.Text>
+        <h1>Algoritmos</h1>
+      </S.Text>
       <S.Buttons>
-          <Link to="/pesobruto"><button>Calculadora de Peso Bruto</button></Link>
-          <Link to="/forcacorte"><button>Calculadora de Força de Corte</button></Link>
-          <Link to="/forcadobra"><button>Calculadora de Força de Dobra</button></Link>
-          <Link to="/energyconsumption"><button>Calculadora Consumo de Energia</button></Link>
-          <Link to="/stopWatch"><button>Cronometro</button></Link>
+          <Link to="/pesobruto"><button>Peso Bruto</button></Link>
+          <Link to="/forcacorte"><button>Força de Corte</button></Link>
+          <Link to="/forcadobra"><button>Força de Dobra</button></Link>
+          <Link to="/energyconsumption"><button>Consumo de Energia</button></Link>
+          <Link to="/stopWatch"><button>Cronômetro</button></Link>
+          <Link to="/vixem"><button>Face Mash</button></Link>
       </S.Buttons>
     </S.Container>
   );
