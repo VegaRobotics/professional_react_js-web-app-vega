@@ -12,7 +12,7 @@ export const Text = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 5rem;
@@ -21,20 +21,61 @@ p {
     font-weight: regular;
     text-decoration: none;
     }
-a {
-    color: white;
-    font-weight: none;
-    font-size: 1.1em;
-    line-height: 0;
-    text-decoration: none;
+
+img {
+        width: 50px;
+        height: 50px;
     }
+a.whats {
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: flex;
+    margin-left: 0px;
+    text-decoration: none;
+    /* margin-top: 50px; */
+    cursor: pointer;
+    animation-direction: alternate;
+    /* &:hover{
+        border-radius: 40px;
+        background: red;
+        color: black;
+        transition: 1s;
+    } */
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    }
+    @-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+    100% {
+        -webkit-transform: scale(1.05);
+        -webkit-filter: brightness(100%);
+    }
+    }
+    @keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+    100% {
+        transform: scale(1.05);
+        filter: brightness(100%);
+    }
+}
+    
+
+
 h2 {
     color: white;
     font-weight: none;
     font-size: 2.2em;
     line-height: 0;
     text-decoration: none;
+    margin-right: 10px;
     }
+    
 `;
 
 export const Button = styled.div`
