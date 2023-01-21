@@ -19,7 +19,7 @@ function Header() {
         <Link to="/">Robótica</Link>
         <Link to="/">Suporte</Link>
         <Link to="/algoritmos">Algoritimos</Link>
-        <Link to="/">Contato</Link>
+        <Link to="/quotes">Contato</Link>
         {/* <a href="https://rwelectrodes.com/" target="_blank" rel="noreferrer" >
           <span>Shop</span>
         </a> */}
