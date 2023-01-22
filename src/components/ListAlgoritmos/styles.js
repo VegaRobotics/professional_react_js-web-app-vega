@@ -26,7 +26,6 @@ export const Buttons = styled.div`
     width: 100%;
     height: 100%;
     button, link {
-        /* display: flex; */
         margin-bottom: 30px;
         justify-content: center; 
         margin-top: 20px;

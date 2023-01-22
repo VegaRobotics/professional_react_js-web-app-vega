@@ -15,6 +15,7 @@ function ListAlgoritmos() {
           <Link to="/energyconsumption"><button>Consumo de Energia</button></Link>
           <Link to="/stopWatch"><button>Cronômetro</button></Link>
           <Link to="/vixem"><button>Face Mash</button></Link>
+          <Link to="/visionsystem"><button>Vision System</button></Link>
       </S.Buttons>
     </S.Container>
   );
