@@ -10,6 +10,7 @@ const Quotes = lazy(() => import('./routes/Quotes'));
 const ForcaDobra = lazy(() => import('./routes/ForcaDobra'));
 const ConsumoEnergia = lazy(() => import('./routes/EnergyConsumption'));
 const Cronometro = lazy(() => import('./routes/StopWatch'));
+const VSystem = lazy(() => import('./routes/VSystem'));
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
          <Route path="/forcadobra" element={<ForcaDobra />} />
          <Route path="/energyconsumption" element={<ConsumoEnergia />} />
          <Route path="/stopwatch" element={<Cronometro />} />
+         <Route path="/visionsystem" element={<VSystem />} />
        </Routes>
       </Suspense>
     </Router>
