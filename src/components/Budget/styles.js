@@ -22,9 +22,10 @@ p {
     text-decoration: none;
     }
 
-img {
-        width: 50px;
-        height: 50px;
+img {   
+        padding-top: 9px;
+        width: 35px;
+        height: 35px;
     }
 a.whats {
     animation: pulse 0.7s infinite;
@@ -106,3 +107,5 @@ button, Link {
     }
 }
 `;
+
+       
