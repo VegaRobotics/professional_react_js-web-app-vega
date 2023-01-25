@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from "react-helmet";
 import * as S from './styles';
 
 export default function PBruto() {
@@ -21,35 +20,29 @@ export default function PBruto() {
 
   return (
     <S.Container>
+        <h1>Gross Weight Carbon Steel</h1>
           <S.Calc>
-            <Helmet>
-                <title>Calculadora de Peso Bruto para Materiais Baixo Carbono</title>
-                <meta name="description" content="Calculadora de Peso Bruto para Materiais Baixo Carbono" />
-                <meta name="keywords" content="engenharia, engenharia atual, como ganhar dinheiro com a engenharia, engenharia século 21, engenharia moderna, sucesso na engenharia, consultoria em engenharia"/>
-                <meta name="author" content="Vega Robotics" />
-            </Helmet>
-            <h1>Calculadora de Peso Bruto para Materiais Baixo Carbono</h1>
-            <label>Passo (mm)</label>
+            <label>Step (mm)</label>
             <input 
               type="number"
               value={nro1}
               onChange={(e) => setNro1(e.target.value)}/>      
-            <label>Largura (mm)</label>
+            <label>Width (mm)</label>
               <input 
                 type="number"
                 value={nro2}
                 onChange={(e) => setNro2(e.target.value)}/>      
-            <label>Espessura (mm)</label>
+            <label>Thickness (mm)</label>
              <input 
                 type="number"
                 value={nro3}
                 onChange={(e) => setNro3(e.target.value)}/> 
-            <label>Peso especifico para materiais baixo carbono (kg/mm³)</label>
+            <label>Specific Weight Carbon Steel (kg/mm³)</label>
              <input 
                 type="number"
                 value={0.00000785}
                 onChange={(e) => setNro4(e.target.value)}/> 
-            <span>O peso bruto é de: {resultado} gramas</span>     
+            <span>The gross weight is: {resultado} grams</span>     
           </S.Calc>
     </S.Container>
   );

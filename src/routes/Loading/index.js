@@ -7,12 +7,12 @@ const Loading = () => {
 
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 20000);
 
     return (
         <div className={`loading-splash ${isLoading ? 'active' : ''}`}>
             <div className="loading-animation"></div>
-            <h1 className="loading-text">Carregando...</h1>
+            <h1 className="loading-text"> Carregando...</h1>
         </div>
     );
 }
