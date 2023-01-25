@@ -1,7 +1,6 @@
 import React, { Suspense, lazy, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-const Loading = lazy(() => import('./routes/Loading'));
 const Home = lazy(() => import('./routes/Home'));
 const Vixem = lazy(() => import('./routes/Vixem'));
 const Algoritmos = lazy(() => import('./routes/Algoritmos'));
@@ -13,14 +12,16 @@ const ConsumoEnergia = lazy(() => import('./routes/EnergyConsumption'));
 const Cronometro = lazy(() => import('./routes/StopWatch'));
 const VSystem = lazy(() => import('./routes/VSystem'));
 const Artigos = lazy(() => import('./routes/Artigos'));
+const Loading = lazy(() => import('./routes/Loading'));
 const Engenharia = lazy(() => import('./routes/Engenharia'));
+const SEngenharia = lazy(() => import('./routes/SEngenharia'));
 
 export default function App() {
     const [isLoading, setIsLoading] = useState(true);
 
     setTimeout(() => {
         setIsLoading(false);
-    }, 2000);
+    }, 20000);
 
   return (
     <Router>
@@ -38,6 +39,7 @@ export default function App() {
          <Route path="/stopwatch" element={<Cronometro />} />
          <Route path="/visionsystem" element={<VSystem />} />
          <Route path="/engenharia" element={<Engenharia />} />
+         <Route path="/sengenharia" element={<SEngenharia />} />
        </Routes>
       </Suspense>
     </Router>
