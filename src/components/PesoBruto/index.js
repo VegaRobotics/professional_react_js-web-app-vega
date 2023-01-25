@@ -20,29 +20,29 @@ export default function PBruto() {
 
   return (
     <S.Container>
-        <h1>Gross Weight Carbon Steel</h1>
+        <h1>Calculadora de Peso Bruto para Materiais Baixo Carbono</h1>
           <S.Calc>
-            <label>Step (mm)</label>
+            <label>Passo (mm)</label>
             <input 
               type="number"
               value={nro1}
               onChange={(e) => setNro1(e.target.value)}/>      
-            <label>Width (mm)</label>
+            <label>Largura (mm)</label>
               <input 
                 type="number"
                 value={nro2}
                 onChange={(e) => setNro2(e.target.value)}/>      
-            <label>Thickness (mm)</label>
+            <label>Espessura (mm)</label>
              <input 
                 type="number"
                 value={nro3}
                 onChange={(e) => setNro3(e.target.value)}/> 
-            <label>Specific Weight Carbon Steel (kg/mm³)</label>
+            <label>Peso Especifico para Materiais de Baixo Carbono (kg/mm³)</label>
              <input 
                 type="number"
                 value={0.00000785}
                 onChange={(e) => setNro4(e.target.value)}/> 
-            <span>The gross weight is: {resultado} grams</span>     
+            <span>O peso bruto em gramas é de: {resultado}</span>     
           </S.Calc>
     </S.Container>
   );
