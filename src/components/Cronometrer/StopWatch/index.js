@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import * as S from './styles';
 import Timer from "../Timer";
+import { Helmet } from "react-helmet";
 import ControlButtons from "../ControlButtons";
 
 
@@ -40,6 +41,12 @@ function StopWatch() {
 
     return (
         <S.StopWatch>
+            <Helmet>
+                <title>Cronometro ReactJS</title>
+                <meta name="description" content="Cronometro ReactJS" />
+                <meta name="keywords" content="engenharia, engenharia atual, como ganhar dinheiro com a engenharia, engenharia século 21, engenharia moderna, sucesso na engenharia, consultoria em engenharia"/>
+                <meta name="author" content="Vega Robotics" />
+            </Helmet>
             <span>Cronometro</span>
             <Timer time={time} />
             <ControlButtons

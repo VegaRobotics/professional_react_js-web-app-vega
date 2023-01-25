@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import * as S from './styles';
 
 export default function FCorte() {
@@ -21,6 +22,12 @@ export default function FCorte() {
   return (
     <S.Container>
           <S.Calc>
+             <Helmet>
+                <title>Calculadora de Força de Corte para Materiais Baixo Carbono</title>
+                <meta name="description" content="Calculadora de Força de Corte para Materiais Baixo Carbono" />
+                <meta name="keywords" content="engenharia, engenharia atual, como ganhar dinheiro com a engenharia, engenharia século 21, engenharia moderna, sucesso na engenharia, consultoria em engenharia"/>
+                <meta name="author" content="Vega Robotics" />
+            </Helmet>
             <h1>Calculadora de Força de Corte para Materiais Baixo Carbono</h1>
             <label>Perímetro de Corte (mm)</label>
             <input 

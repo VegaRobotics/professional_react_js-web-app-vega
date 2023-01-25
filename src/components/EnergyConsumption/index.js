@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import * as S from './styles';
 
 export default function FCorte() {
@@ -36,6 +37,12 @@ export default function FCorte() {
   return (
     <S.Container>
           <S.Calc>
+            <Helmet>
+                <title>Calculadora Consumo de Energia</title>
+                <meta name="description" content="Calculadora Consumo de Energia" />
+                <meta name="keywords" content="engenharia, engenharia atual, como ganhar dinheiro com a engenharia, engenharia século 21, engenharia moderna, sucesso na engenharia, consultoria em engenharia"/>
+                <meta name="author" content="Vega Robotics" />
+            </Helmet>
             <h1>Calculadora Consumo de Energia</h1>
             <label>Potência do equipamento (Watts)</label>
             <input 
