@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const Home = lazy(() => import('./routes/Home'));
@@ -11,11 +11,18 @@ const ForcaDobra = lazy(() => import('./routes/ForcaDobra'));
 const ConsumoEnergia = lazy(() => import('./routes/EnergyConsumption'));
 const Cronometro = lazy(() => import('./routes/StopWatch'));
 const VSystem = lazy(() => import('./routes/VSystem'));
+const Loading = lazy(() => import('./routes/Loading'));
 
 export default function App() {
+    const [isLoading, setIsLoading] = useState(true);
+
+    setTimeout(() => {
+        setIsLoading(false);
+    }, 10000);
+
   return (
     <Router>
-     <Suspense fallback={<div>Loading...</div>}>
+     <Suspense fallback={isLoading && <Loading/>}>
        <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/vixem" element={<Vixem />} />
