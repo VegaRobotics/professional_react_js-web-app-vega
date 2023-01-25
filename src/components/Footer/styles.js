@@ -6,7 +6,7 @@ export const Container= styled.div`
     width: 100%;
     height: 15vmin;
     background: #161a1e;
-    bottom: 10px;
+    /* bottom: 5px; */
     align-items: center;
 
     span{
@@ -21,6 +21,7 @@ export const Container= styled.div`
         font-weight: lighter;
         margin-top: -5px;
         text-align: center;
+        /* padding-bottom: 10px; */
     }
 `
 export const Center = styled.div`

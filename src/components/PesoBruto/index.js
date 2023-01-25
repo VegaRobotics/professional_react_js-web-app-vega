@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import * as S from './styles';
 
 export default function PBruto() {
@@ -21,6 +22,12 @@ export default function PBruto() {
   return (
     <S.Container>
           <S.Calc>
+            <Helmet>
+                <title>Calculadora de Peso Bruto para Materiais Baixo Carbono</title>
+                <meta name="description" content="Calculadora de Peso Bruto para Materiais Baixo Carbono" />
+                <meta name="keywords" content="engenharia, engenharia atual, como ganhar dinheiro com a engenharia, engenharia século 21, engenharia moderna, sucesso na engenharia, consultoria em engenharia"/>
+                <meta name="author" content="Vega Robotics" />
+            </Helmet>
             <h1>Calculadora de Peso Bruto para Materiais Baixo Carbono</h1>
             <label>Passo (mm)</label>
             <input 

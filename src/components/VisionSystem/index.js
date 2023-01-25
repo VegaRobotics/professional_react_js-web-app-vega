@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import Webcam from 'react-webcam';
 import FileSaver from "file-saver";
 import pixelmatch from 'pixelmatch';
+import { Helmet } from "react-helmet";
 import * as S from './styles';
 
 function VisionSystem() {
@@ -106,6 +107,12 @@ function VisionSystem() {
 
   return (
     <S.Container>
+            <Helmet>
+                <title>Sistema de Visão</title>
+                <meta name="description" content="Sistema de Visão" />
+                <meta name="keywords" content="engenharia, engenharia atual, como ganhar dinheiro com a engenharia, engenharia século 21, engenharia moderna, sucesso na engenharia, consultoria em engenharia"/>
+                <meta name="author" content="Vega Robotics" />
+            </Helmet>
       <S.WebCam>
         <h1>Imagem em Tempo Real</h1>
         <Webcam
