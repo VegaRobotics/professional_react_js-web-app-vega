@@ -1,38 +1,57 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    /* position: relative; */
+    display: flex;
     width: 100%;
     height: 100%;
-    background: #FFFF;
-    align-items: row;    
-    `
+    background: white;
+    flex-direction: column;
+    justify-content: center;    
+    h1 {
+        color: #2e2e2e;
+        margin-left: 30px;
+        margin-top: 30px;
+        font-weight: regular;
+        font-size: 1.8em;
+        text-decoration: none;
+}
+`;
 
 export const Calc = styled.div`
-    /* position: absolute; */
-    /* margin-top: 50%;
-    margin-left: 50%; */
-    width: 100px;
+    width: 90%;
     height: 100%;
-    line-height: 30px;
-    /* align-items: row; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0.15rem;
+    padding-left: 2rem;
+    padding-bottom: 3rem; 
+
 
 label {
-    color: #000000;
+    color: #2e2e2e;
     font-weight: regular;
-    font-size: 20px;
+    font-size: 1.15em;
     text-decoration: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
 }
 span {
-    color: #000000;
+    padding-top: 1rem;
+    color: #2e2e2e;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25em;
     text-decoration: none;
 }
 input {
-    color: #000000;
+    width: 50%;
+    color: #2e2e2e;
     font-weight: regular;
-    font-size: 15px;
     text-decoration: none;
+    font-size: 1.15em;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 `
