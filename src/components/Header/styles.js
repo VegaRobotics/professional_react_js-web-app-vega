@@ -9,6 +9,10 @@ export const Container = styled.div`
     display: flex;
     position: initial;
     z-index: -1;
+    @media (max-width: 580px) {
+    flex-wrap: wrap;
+}
+
 `
 export const Center = styled.div`
     width: 100%;
@@ -28,6 +32,11 @@ export const Center = styled.div`
     color: #891A14;
     transition: 0.25s;
 }
+}
+@media (max-width: 580px) {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center;
 }
 `
 export const LeftSide = styled.div`
@@ -98,5 +107,10 @@ export const RightSide = styled.div`
         top: -20px;
         right: 10px;
     }
+    
+    }
+    @media (max-width: 580px) {
+    width: 100%;
+    justify-content: center;
     }
 `
