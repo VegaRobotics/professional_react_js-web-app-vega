@@ -8,6 +8,7 @@ export const Container = styled.div`
     @media (max-width: 414px) {
             /* background-color: green; */
             height: 20%;
+            overflow: hidden;
             /* font-size: 20px;
             margin-top: -50px; */
         }
@@ -56,7 +57,7 @@ export const SVideo = styled.div`
         }
     }
     @media (max-width: 414px) {
-            background-color: red;
+            /* background-color: red; */
             width: 100%;
             /* margin-top: 10px; */
         }

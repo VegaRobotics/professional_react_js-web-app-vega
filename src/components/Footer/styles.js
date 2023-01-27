@@ -9,9 +9,10 @@ export const Container= styled.div`
     /* bottom: 5px; */
     align-items: center;
     @media (max-width: 414px) {
-        height: 100px;
+        height: 100%;
         /* background-color: red; */
         flex-direction: column;
+        overflow: hidden;
         /* margin-bottom: 30px; */
         /* padding-bottom: 30px; */
     }  
@@ -106,7 +107,8 @@ export const LeftSide = styled.div`
             width: 40px;
             flex-direction: column;
             /* background-color: red; */
-            padding: 29px;
+            /* margin: 1rem auto; */
+            padding: 26px;
         /* flex-direction: column; */
         /* margin-bottom: 30px; */
         /* padding-bottom: 30px; */

@@ -12,6 +12,7 @@ export const Container = styled.div`
 
     @media (max-width: 414px) {
         width: 100%;
+        overflow: hidden
         /* flex-direction: column; */
         /* background-color: red; */
     }
@@ -39,7 +40,7 @@ export const Center = styled.div`
     transition: 0.25s;
 }
 }
-@media (max-width: 580px) {
+@media (max-width: 414px) {
     width: 100%;
     margin-right: 0;
     justify-content: center;
@@ -120,7 +121,7 @@ export const RightSide = styled.div`
     }
     
     }
-    @media (max-width: 580px) {
+    @media (max-width: 414px) {
     width: 100%;
     justify-content: center;
     }

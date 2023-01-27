@@ -15,6 +15,7 @@ background-image: url(https://seedorffacme.com/wp-content/themes/seedorff/images
             height: 180px;
             /* background-image: none; */
             background-size: 300%;
+            overflow: hidden;
             margin-top: -60px;
         }
 `;
