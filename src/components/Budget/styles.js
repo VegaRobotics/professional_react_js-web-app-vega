@@ -10,6 +10,13 @@ background-image: url(https://seedorffacme.com/wp-content/themes/seedorff/images
     flex-direction: column;
     height: auto;
 }
+@media (max-width: 414px) {
+            /* flex-direction: column; */
+            height: 180px;
+            /* background-image: none; */
+            background-size: 300%;
+            margin-top: -60px;
+        }
 `;
 
 export const Text = styled.div`
@@ -25,12 +32,20 @@ p {
     color: #FFFFFF99;
     font-weight: regular;
     text-decoration: none;
+    @media (max-width: 414px) {
+            /* flex-direction: column; */
+            display: none;
+        }
 }
 
 img {   
     padding-top: 9px;
     width: 35px;
     height: 35px;
+    @media (max-width: 414px) {
+            margin-top: -10px;
+            margin-left: 10px;
+        }
 }
 
 a.whats {
@@ -84,6 +99,11 @@ h2 {
         font-size: 1.5em;
         text-align: center;
     }
+
+    @media (max-width: 414px) {
+            /* margin-top: -10px; */
+            margin-left: 5px;
+        }
 }
 `;
 
@@ -99,6 +119,10 @@ justify-content: flex-end;
     padding-right: 0;
     justify-content: center;
 }
+@media (max-width: 414px) {
+            /* background-color: green; */
+            margin-top: -50px;
+        }
     button, Link {
     color: white;
     background: #F55E34;
@@ -112,6 +136,9 @@ justify-content: flex-end;
     border: none;
     cursor: pointer;
     border-radius: 0.5rem;
+    @media (max-width: 414px) {
+            margin-top: -40px;
+        }
     
     &:hover{
         background: white;

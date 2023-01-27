@@ -9,10 +9,12 @@ export const Container = styled.div`
     display: flex;
     position: initial;
     z-index: -1;
-    @media (max-width: 580px) {
-    flex-wrap: wrap;
-}
 
+    @media (max-width: 414px) {
+        width: 100%;
+        /* flex-direction: column; */
+        /* background-color: red; */
+    }
 `
 export const Center = styled.div`
     width: 100%;
@@ -20,6 +22,10 @@ export const Center = styled.div`
     display: flex;
     align-items: center;
     margin-right: 200px;
+    @media (max-width: 414px) {
+            /* flex-direction: column; */
+            display: none;
+        }
 
     a, button {
     color: #FFFFFF;
@@ -57,10 +63,12 @@ export const LeftSide = styled.div`
     }
     }
 
-    @media (max-width: 580px){
+    @media (max-width: 414px){
         #logo {
-            width: 70%;
-            height: auto;
+            width: 100%;
+            justify-content: center;
+            margin-left: 75px;
+            height: 100%;
         }
     }
 `
@@ -74,6 +82,9 @@ export const RightSide = styled.div`
         width: 45px;
         padding-top: 0px;
         padding-right: 30px;
+        @media (max-width: 414px) {
+            display: none;
+        }
         &:hover{
          transform: scale(1.1);
          opacity: 20;
