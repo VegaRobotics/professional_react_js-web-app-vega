@@ -5,6 +5,12 @@ export const Container = styled.div`
     width: 100%;   
     /* height: calc(100vh - 70px); */
     /* overflow-y: scroll;  */
+    @media (max-width: 414px) {
+            /* background-color: green; */
+            height: 20%;
+            /* font-size: 20px;
+            margin-top: -50px; */
+        }
     `;
 export const SText = styled.div`
     display: flex;
@@ -30,6 +36,11 @@ export const SText = styled.div`
         -ms-animation: fadeinup 2s; /* Internet Explorer */
         -o-animation: fadeinup 2s; /* Opera < 12.1 */
         animation: fadeinup 2s;
+        @media (max-width: 414px) {
+            /* background-color: red; */
+            font-size: 20px;
+            margin-top: -50px;
+        }
 }
 `;
 
@@ -44,6 +55,11 @@ export const SVideo = styled.div`
             height: 30%;
         }
     }
+    @media (max-width: 414px) {
+            background-color: red;
+            width: 100%;
+            /* margin-top: 10px; */
+        }
     @media (max-width: 700px){
         #videoBanner {
             width: 100%;

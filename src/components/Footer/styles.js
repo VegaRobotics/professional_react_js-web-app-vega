@@ -8,12 +8,26 @@ export const Container= styled.div`
     background: #161a1e;
     /* bottom: 5px; */
     align-items: center;
+    @media (max-width: 414px) {
+        height: 100px;
+        /* background-color: red; */
+        flex-direction: column;
+        /* margin-bottom: 30px; */
+        /* padding-bottom: 30px; */
+    }  
+  
 
     span{
         color: gray;
         font-weight: lighter;
         margin-top: 25px;
-    }  
+       
+        @media (max-width: 414px) {
+            /* background-color: red; */
+            margin-right: 10px;
+            /* margin-bottom: -10px; */
+        }
+    }
     
     footer{
         color: gray;
@@ -21,12 +35,21 @@ export const Container= styled.div`
         font-weight: lighter;
         margin-top: -5px;
         text-align: center;
+        @media (max-width: 414px) {
+            height: 100%;
+            flex-direction: column;
+            /* background-color: red; */
+        /* flex-direction: column; */
+        /* margin-bottom: 30px; */
+        /* padding-bottom: 30px; */
+    }
         /* padding-bottom: 10px; */
     }
+    
 
-    @media only screen and (max-width: 414px) {
+    /* @media only screen and (max-width: 414px) {
         height: 25vmin;
-    }
+    } */
 `
 export const Center = styled.div`
     display: row;
@@ -36,6 +59,16 @@ export const Center = styled.div`
     pointer-events: none;
     background: #161a1e;
     border-radius: 100px;
+    @media (max-width: 414px) {
+            height: 100%;
+            width: 100px;
+            flex-direction: column;
+            /* background-color: red; */
+            /* padding: 29px; */
+        /* flex-direction: column; */
+        /* margin-bottom: 30px; */
+        /* padding-bottom: 30px; */
+    }
     @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 10s linear;
@@ -50,10 +83,10 @@ export const Center = styled.div`
 }
 }
 
-    @media only screen and (max-width: 414px) {
+    /* @media only screen and (max-width: 414px) {
         width: 20%;
         margin-bottom: 15vmin;
-    }
+    } */
 `
 
 export const LeftSide = styled.div`
@@ -68,6 +101,16 @@ export const LeftSide = styled.div`
         width: 30px;
         padding: 10px;
         /* height: 80px; */
+        @media (max-width: 414px) {
+            height: 100%;
+            width: 40px;
+            flex-direction: column;
+            /* background-color: red; */
+            padding: 29px;
+        /* flex-direction: column; */
+        /* margin-bottom: 30px; */
+        /* padding-bottom: 30px; */
+    }
         &:hover{
             transform: scale(1.1);
             opacity: 20;
@@ -75,9 +118,13 @@ export const LeftSide = styled.div`
         }
     }
 
-    @media only screen and (max-width: 414px) {
+    /* @media only screen and (max-width: 414px) {
         height: 50px;
-    }
+        background-color: red;
+        flex-direction: column;
+        margin-right: 90px;
+        margin-top: -60px;
+    } */
 `
 
 export const RightSide = styled.div`
@@ -93,6 +140,7 @@ export const RightSide = styled.div`
     img {
         width: 80px;
         height: 80px;
+        
     }
 
     button {
