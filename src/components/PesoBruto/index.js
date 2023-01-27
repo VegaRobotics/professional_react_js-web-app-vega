@@ -42,7 +42,7 @@ export default function PBruto() {
                 type="number"
                 value={0.00000785}
                 onChange={(e) => setNro4(e.target.value)}/> 
-            <span>O peso bruto em gramas é de: {resultado}</span>     
+            <span>O peso bruto em gramas é de: {resultado}</span>   
           </S.Calc>
     </S.Container>
   );

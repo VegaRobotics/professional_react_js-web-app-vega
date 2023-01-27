@@ -23,6 +23,10 @@ export const Container= styled.div`
         text-align: center;
         /* padding-bottom: 10px; */
     }
+
+    @media only screen and (max-width: 414px) {
+        height: 25vmin;
+    }
 `
 export const Center = styled.div`
     display: row;
@@ -45,6 +49,11 @@ export const Center = styled.div`
   }
 }
 }
+
+    @media only screen and (max-width: 414px) {
+        width: 20%;
+        margin-bottom: 15vmin;
+    }
 `
 
 export const LeftSide = styled.div`
@@ -55,16 +64,20 @@ export const LeftSide = styled.div`
     justify-content: flex-start;
     padding-left: 20px;
 
-img {
-    width: 30px;
-    padding: 10px;
-    /* height: 80px; */
-    &:hover{
-        transform: scale(1.1);
-        opacity: 20;
-        transition: 1s;
+    img {
+        width: 30px;
+        padding: 10px;
+        /* height: 80px; */
+        &:hover{
+            transform: scale(1.1);
+            opacity: 20;
+            transition: 1s;
+        }
     }
-}
+
+    @media only screen and (max-width: 414px) {
+        height: 50px;
+    }
 `
 
 export const RightSide = styled.div`
@@ -76,29 +89,29 @@ export const RightSide = styled.div`
     text-align: right;
     align-content: space-evenly;
     padding-right: 20px;
-    
 
-img {
-    width: 80px;
-    height: 80px;
-}
+    img {
+        width: 80px;
+        height: 80px;
+    }
 
-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
 
-a, button {
-    color: gray;
-    font-weight: lighter;
-    text-decoration: none;
-    margin-top: 25px;
-    margin-right: 10px;
+    a, button {
+        color: gray;
+        font-weight: lighter;
+        text-decoration: none;
+        margin-top: 25px;
+        margin-right: 10px;
 
-&:hover{
-    color: #FFFFFF;
-    transition: 0.25s;
+        &:hover{
+            color: #FFFFFF;
+            transition: 0.25s
+
 }
 
 span {
