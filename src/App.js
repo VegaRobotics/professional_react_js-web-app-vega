@@ -15,6 +15,7 @@ const Artigos = lazy(() => import('./routes/Artigos'));
 const Loading = lazy(() => import('./routes/Loading'));
 const Engenharia = lazy(() => import('./routes/Engenharia'));
 const KanbanBoard = lazy(() => import('./routes/KanbanBoard'));
+const BoasPraticasProjetos = lazy(() => import('./routes/BoasPraticasProjetos'));
 
 export default function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +41,7 @@ export default function App() {
          <Route path="/visionsystem" element={<VSystem />} />
          <Route path="/engenharia" element={<Engenharia />} />
          <Route path="/kanbanboard" element={<KanbanBoard />} />
+         <Route path="/boaspraticasprojetos" element={<BoasPraticasProjetos />} />
        </Routes>
       </Suspense>
     </Router>
