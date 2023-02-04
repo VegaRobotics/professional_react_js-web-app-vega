@@ -18,6 +18,7 @@ const KanbanBoard = lazy(() => import('./routes/KanbanBoard'));
 const BoasPraticasProjetos = lazy(() => import('./routes/BoasPraticasProjetos'));
 const GrabCad = lazy(() => import('./routes/GrabCad'));
 const GuiasLineares = lazy(() => import('./routes/GuiasLineares'));
+const Paint = lazy(() => import('./routes/Paint'));
 
 export default function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -46,6 +47,7 @@ export default function App() {
          <Route path="/boaspraticasprojetos" element={<BoasPraticasProjetos />} />
          <Route path="/grabcad" element={<GrabCad />} />
          <Route path="/guiaslineares" element={<GuiasLineares />} />
+         <Route path="/paint" element={<Paint />} />
        </Routes>
       </Suspense>
     </Router>

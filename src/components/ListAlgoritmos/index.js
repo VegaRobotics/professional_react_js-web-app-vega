@@ -16,6 +16,7 @@ function ListAlgoritmos() {
           <Link to="/stopWatch"><button>Cronômetro</button></Link>
           <Link to="/vixem"><button>Face Mash</button></Link>
           <Link to="/visionsystem"><button>Vision System</button></Link>
+          <Link to="/paint"><button>Paint</button></Link>
       </S.Buttons>
     </S.Container>
   );
