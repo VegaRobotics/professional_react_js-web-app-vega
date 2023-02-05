@@ -19,6 +19,7 @@ const BoasPraticasProjetos = lazy(() => import('./routes/BoasPraticasProjetos'))
 const GrabCad = lazy(() => import('./routes/GrabCad'));
 const GuiasLineares = lazy(() => import('./routes/GuiasLineares'));
 const Paint = lazy(() => import('./routes/Paint'));
+const CapturEmail = lazy(() => import('./routes/CapturEmail'));
 
 export default function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -48,6 +49,7 @@ export default function App() {
          <Route path="/grabcad" element={<GrabCad />} />
          <Route path="/guiaslineares" element={<GuiasLineares />} />
          <Route path="/paint" element={<Paint />} />
+         <Route path="/captur" element={<CapturEmail />} />
        </Routes>
       </Suspense>
     </Router>
