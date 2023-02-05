@@ -1,78 +1,68 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import * as S from './styles';
-
-function Modal({ onClose, onSubmit }) {
-  const [email, setEmail] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    onSubmit(email);
-    onClose();
-  };
-
-  return (
-    <S.Modal>
-    <div className="fixed top-0 left-0 right-0 bottom-0 z-50 flex items-center justify-center">
-      <div className="bg-white p-5 rounded-lg shadow-xl w-full max-w-sm">
-        <form onSubmit={handleSubmit}>
-          <h2 className="text-lg font-medium mb-4">Please enter your email:</h2>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="bg-gray-200 p-2 rounded-lg w-full mb-4"
-          />
-          <div className="flex justify-end">
-            <button
-              type="button"
-              onClick={onClose}
-              className="bg-gray-300 p-2 rounded-lg mr-2"
-            >
-              Cancel
-            </button>
-            <button type="submit" className="bg-purple-500 p-2 rounded-lg text-white">
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-    </S.Modal>
-  );
-}
+import emailjs from '@emailjs/browser';
 
 function CapturEmail() {
-  const [showModal, setShowModal] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  
+  function sendEmail(e) {
+    e.preventDefault();
 
-  useEffect(() => {
-    window.addEventListener('beforeunload', (e) => {
-      setShowModal(true);
-      e.preventDefault();
-      e.returnValue = '';
-    });
-    return () => {
-      window.removeEventListener('beforeunload', () => {});
+    if (name === '' || email === '') {
+      alert('Preencha todos os campos');
+      return;
+    }
+
+    const templateParams = {
+      from_name: name,
+      email: email,
     };
-  }, []);
 
-  const handleClose = () => {
-    setShowModal(false);
-  };
-
-  const handleSubmit = (email) => {
-    console.log(`Email: ${email}`);
-  };
+    emailjs
+    //   .send("service_0em9x43", "template_t0fkzdn", templateParams, "jejqf22vllpv8NSLH")
+      .send('service_8o40684', 'template_h74ot0x', templateParams, 'jejqf22vllpv8NSLH')
+      .then(
+        (response) => {
+          console.log('EMAIL ENVIADO', response.status, response.text);
+          setName('');
+          setEmail('');
+          alert('E-mail enviado com sucesso!');
+        },
+        (err) => {
+          console.log('ERRO: ', err);
+        }
+      );
+  }
+  
 
   return (
-    <S.CapturEmail>
-    <div className="p-5">
-      <h1 className="text-2xl font-medium">Welcome to my page!</h1>
-      {showModal && (
-        <Modal onClose={handleClose} onSubmit={handleSubmit} />
-      )}
-    </div>
-    </S.CapturEmail>
-  );
+    <S.Container>
+      <S.Form>
+        <h1>Receba seu e-book gratuitamente!</h1>
+              <form onSubmit={sendEmail}>
+                  <input
+                    className="input"
+                    type="latin-prose"
+                    placeholder="Digite seu nome"
+                    onChange={(e) => setName(e.target.value)}
+                    value={name}
+                  />
+                  <input
+                    className="input"
+                    type="email"
+                    placeholder="Digite seu email"
+                    autocomplete="on"
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
+                  />
+                  <button 
+                    className="button" 
+                    type="submit" 
+                  value="Enviar">ENVIAR</button>
+                </form>
+            </S.Form>
+        </S.Container>
+    );
 }
-
 export default CapturEmail;
