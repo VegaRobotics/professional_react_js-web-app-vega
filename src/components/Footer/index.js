@@ -3,7 +3,7 @@ import * as S from './styles';
 import logo from '../../assets/logo.svg';
 import insta from '../../assets/insta.png';
 import youtube from '../../assets/youtube.png';
-import link from '../../assets/link.png';
+// import link from '../../assets/link.png';
 import whatsapp from '../../assets/whatsapp.png';
 // import vixem from '../../assets/vixembeta.png';
 
