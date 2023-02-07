@@ -19,9 +19,9 @@ function Footer() {
                 <img src={youtube} className="youtube" alt="youtube"/>
                 </a>
 
-                <a href="https://www.linkedin.com/company/vega-robotics-tech/?viewAsMember=true" target="_blank" rel="noreferrer" >
+                {/* <a href="https://www.linkedin.com/company/vega-robotics-tech/?viewAsMember=true" target="_blank" rel="noreferrer" >
                 <img src={link} className="link" alt="link" />
-                </a>
+                </a> */}
 
                 <a href="https://api.whatsapp.com/send/?phone=%2B551151998949&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer" >
                 <img src={whatsapp} className="link" alt="link" />
