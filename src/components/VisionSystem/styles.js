@@ -5,6 +5,14 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
     background-color: #FFFFFF;
+    @media (max-width: 414px) {
+            display: inline;
+            /* background-color: green; */
+            height: 100%;
+            overflow: hidden;
+            /* font-size: 20px;
+            margin-top: -50px; */
+        }
 `
 export const WebCam = styled.div`
     display: block;
@@ -12,7 +20,7 @@ export const WebCam = styled.div`
     margin-bottom: 10px;
     h1 {
         text-align: center;
-        color: #2e2e2e;
+        color: gray;
         font-weight: none;
         font-size: 1.5em;
         -webkit-animation: fadeinup 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -21,6 +29,17 @@ export const WebCam = styled.div`
         -o-animation: fadeinup 2s; /* Opera < 12.1 */
         animation: fadeinup 2s;
     }
+    @media (max-width: 414px) {
+            display: column;
+            /* background-color: #FFFFFF; */
+            /* color: red; */
+            padding-left: 40px;
+            /* background-color: red; */
+            width: 80%;
+            /* height: 100%; */
+            /* margin-top: 10px; */
+            overflow: hidden;
+        }
 `
 export const ImageStorage = styled.div`
     display: block;
@@ -28,7 +47,7 @@ export const ImageStorage = styled.div`
     margin-bottom: 10px;
     h1 {
         text-align: center;
-        color: #2e2e2e;
+        color: gray;
         font-weight: none;
         font-size: 1.5em;
         -webkit-animation: fadeinup 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -37,12 +56,21 @@ export const ImageStorage = styled.div`
         -o-animation: fadeinup 2s; /* Opera < 12.1 */
         animation: fadeinup 2s;
     }
+    @media (max-width: 414px) {
+            display: column;
+            /* background-color: #FFFFFF; */
+            /* background-color: red; */
+            padding-left: 40px;
+            width: 80%;
+            /* margin-top: 10px; */
+            overflow: hidden;
+        }
 `
 export const Range = styled.div`
     display: inline-flex;
-    width: 100%;
+    width: 60%;
     input {
-        width: 50%;
+        width: 70%;
         color: #6b6b6b;
         font-weight: regular;
         font-size: 1em;
@@ -56,7 +84,7 @@ export const Range = styled.div`
     }
     h1 {
         text-align: center;
-        color: #2e2e2e;
+        color: gray;
         font-weight: none;
         font-size: 1em;
         -webkit-animation: fadeinup 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -65,6 +93,14 @@ export const Range = styled.div`
         -o-animation: fadeinup 2s; /* Opera < 12.1 */
         animation: fadeinup 2s;
     }
+    @media (max-width: 414px) {
+            display: inline;
+            background-color: #FFFFFF;
+            /* background-color: red; */
+            width: 100%;
+            /* margin-top: 10px; */
+            overflow: hidden;
+        }
 `
 
 export const Button = styled.div`
@@ -107,6 +143,14 @@ export const Button = styled.div`
         -o-animation: fadeinup 2s; /* Opera < 12.1 */
         animation: fadeinup 2s;
     }
+    @media (max-width: 414px) {
+            display: column;
+            /* background-color: #FFFFFF; */
+            /* background-color: red; */
+            width: 90%;
+            /* margin-top: 10px; */
+            overflow: hidden;
+        }
 }
 `
 
@@ -123,12 +167,23 @@ export const Result = styled.div`
         -o-animation: fadeinup 2s; /* Opera < 12.1 */
         animation: fadeinup 2s;
     }
+    @media (max-width: 414px) {
+            display: inline;
+            background-color: #FFFFFF;
+            /* background-color: red; */
+            padding-right: 20px;
+            width: 100%;
+            /* margin-top: 10px; */
+            overflow: hidden;
+        }
+        
 `
 
 export const Modal = styled.div`
     .modal {
         z-index: 1;
-        width: 100%;
+        background-color: #FFFFFF;
+        width: 60%;
         height: 100%;
         border: 5px solid black;
         p{
@@ -141,6 +196,14 @@ export const Modal = styled.div`
         -ms-animation: fadeinup 2s; /* Internet Explorer */
         -o-animation: fadeinup 2s; /* Opera < 12.1 */
         animation: fadeinup 2s;  
+        @media (max-width: 414px) {
+            display: column;
+            background-color: #FFFFFF;
+            /* background-color: red; */
+            width: 80%;
+            /* margin-top: 10px; */
+            overflow: hidden;
+        }
         }
     }
     
