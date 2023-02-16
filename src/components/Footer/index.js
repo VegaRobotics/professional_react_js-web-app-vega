@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import * as S from './styles';
 import logo from '../../assets/logo.svg';
 import insta from '../../assets/insta.png';
@@ -28,9 +29,10 @@ function Footer() {
                 <img src={whatsapp} className="link" alt="link" />
                 </a>
 
-                <a href="/visionsystem">
+                <Link to="/visionsystem">
                  <img src={vision} alt="VegaRobotics" id="logo"/>
-                 </a>
+                </Link>
+            
             </S.LeftSide>
             <S.Center>
                 <img src={logo} className="App-logo" alt="logo"/>
