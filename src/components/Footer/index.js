@@ -6,6 +6,7 @@ import youtube from '../../assets/youtube.png';
 // import link from '../../assets/link.png';
 import whatsapp from '../../assets/whatsapp.png';
 // import vixem from '../../assets/vixembeta.png';
+import vision from '../../assets/camera-de-video.png';
 
 function Footer() {
     return (
@@ -26,6 +27,10 @@ function Footer() {
                 <a href="https://api.whatsapp.com/send/?phone=%2B551151998949&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer" >
                 <img src={whatsapp} className="link" alt="link" />
                 </a>
+
+                <a href="/visionsystem">
+                 <img src={vision} alt="VegaRobotics" id="logo"/>
+                 </a>
             </S.LeftSide>
             <S.Center>
                 <img src={logo} className="App-logo" alt="logo"/>
