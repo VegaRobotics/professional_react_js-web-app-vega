@@ -20,7 +20,7 @@ function VisionSystem() {
   const [localStorageImage, setLocalStorageImage] = useState(null);
   const [useLocalStorage, setUseLocalStorage] = useState(false);
   const [approvedRange, setApprovedRange] = useState([0, 10]);
-  const [facingMode, setFacingMode] = useState('user');
+  const [facingMode, setFacingMode] = useState('environment');
   const modalText = diffPercentage && diffPercentage >= 95 ? "Aprovado" : "Reprovado";
 
   const webcamRef = useRef(null);
