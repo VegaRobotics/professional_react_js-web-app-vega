@@ -146,9 +146,9 @@ return (
       <meta name="author" content="Vega Robotics" />
     </Helmet>
     <S.WebCam>
-      <button onClick={() => setFacingMode(facingMode === 'environment' ? 'user' : 'user')}>Trocar câmera</button>
-      <Webcam ref={webcamRef} width={320} height={240} facingMode={facingMode} />
+      {/* <button onClick={() => setFacingMode(facingMode === 'environment' ? 'user' : 'user')}>Trocar câmera</button> */}
       <h1>Imagem em Tempo Real</h1>
+      <Webcam ref={webcamRef} width={320} height={240} facingMode={'environment'} />
     </S.WebCam>
     <S.ImageStorage>
       <h1>Imagem Capturada</h1>
