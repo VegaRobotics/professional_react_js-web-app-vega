@@ -20,10 +20,11 @@ function VisionSystem() {
   const [localStorageImage, setLocalStorageImage] = useState(null);
   const [useLocalStorage, setUseLocalStorage] = useState(false);
   const [approvedRange, setApprovedRange] = useState([0, 10]);
+  const [facingMode, setFacingMode] = useState('user');
   const modalText = diffPercentage && diffPercentage >= 95 ? "Aprovado" : "Reprovado";
 
   const webcamRef = useRef(null);
-
+ 
   const clearLocalStorage = () => {
     localStorage.clear();
     setLocalStorageImage(null);
@@ -145,8 +146,9 @@ return (
       <meta name="author" content="Vega Robotics" />
     </Helmet>
     <S.WebCam>
+      <button onClick={() => setFacingMode(facingMode === 'user' ? 'environment' : 'user')}>Trocar câmera</button>
       <h1>Imagem em Tempo Real</h1>
-      <Webcam ref={webcamRef} width={320} height={240} />
+      <Webcam ref={webcamRef} width={320} height={240} facingMode={facingMode} />
     </S.WebCam>
     <S.ImageStorage>
       <h1>Imagem Capturada</h1>
