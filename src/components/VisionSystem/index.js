@@ -147,14 +147,14 @@ return (
       />
       <meta name="author" content="Vega Robotics" />
     </Helmet>
-    <S.WebCam>
-      {/* <button onClick={() => setFacingMode(facingMode === 'environment' ? 'user' : 'user')}>Trocar câmera</button> */}
-      <h1>Imagem em Tempo Real</h1>
       <S.Button>
         <button onClick={() => setFacingMode(facingMode === 'environment' ? 'user' : 'environment')}>
          Trocar câmera
         </button>
       </S.Button>
+    <S.WebCam>
+      {/* <button onClick={() => setFacingMode(facingMode === 'environment' ? 'user' : 'user')}>Trocar câmera</button> */}
+      <h1>Imagem em Tempo Real</h1>
       <Webcam ref={webcamRef} width={320} height={240} videoConstraints = {videoConstraints} />
       </S.WebCam>
     <S.ImageStorage>
@@ -179,14 +179,11 @@ return (
         <h1>%</h1>
       </div>
     </S.Range>
-
     <S.Button>
     <button onClick={() => {
   capture();
   compareImages();
 }}>2º → Capture Image</button>
-
-
   <button
     onClick={() => {
       setLocalStorageImage(localStorage.getItem("webcamImage"));
@@ -202,7 +199,6 @@ return (
   {/* <button onClick={compareImages}>Compare Images</button>
   <button onClick={clearLocalStorage}>Limpar Local Storage</button> */}
 </S.Button>
-
     <S.Result>
       {diffPercentage
         ? `As imagens são ${diffPercentage.toFixed(2)}% diferentes`

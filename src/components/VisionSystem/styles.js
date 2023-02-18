@@ -57,7 +57,7 @@ export const ImageStorage = styled.div`
         animation: fadeinup 2s;
     }
     @media (max-width: 414px) {
-            display: column;
+            display: none;
             /* background-color: #FFFFFF; */
             /* background-color: red; */
             padding-left: 40px;
