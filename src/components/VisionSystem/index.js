@@ -125,9 +125,9 @@ function VisionSystem() {
     setDiffImage(diffCanvas.toDataURL());
   }, [approvedRange, setImageClass, setDiffImage, setDiffPercentage]);
   
-  const  videoConstraints  =  { 
-    facesMode : {  exact : "environment"  } 
-  } ;
+  const videoConstraints = {
+    facingMode: facingMode,
+  };
           
 
 const closeModal = useCallback(() => {
@@ -150,8 +150,13 @@ return (
     <S.WebCam>
       {/* <button onClick={() => setFacingMode(facingMode === 'environment' ? 'user' : 'user')}>Trocar câmera</button> */}
       <h1>Imagem em Tempo Real</h1>
-      <Webcam ref={webcamRef} width={320} height={240} videoConstraints = { videoConstraints } />
-    </S.WebCam>
+      <S.Button>
+        <button onClick={() => setFacingMode(facingMode === 'environment' ? 'user' : 'environment')}>
+         Trocar câmera
+        </button>
+      </S.Button>
+      <Webcam ref={webcamRef} width={320} height={240} videoConstraints = {videoConstraints} />
+      </S.WebCam>
     <S.ImageStorage>
       <h1>Imagem Capturada</h1>
       <img
