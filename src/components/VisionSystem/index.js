@@ -130,9 +130,19 @@ function VisionSystem() {
   };
           
 
-const closeModal = useCallback(() => {
-  setModal(false);
-}, [])
+  const closeModal = useCallback(() => {
+    setModal(false);
+    setDiffImage(null);
+  }, []);
+  
+  const newVerification = useCallback(() => {
+    setWebcamImage(null);
+    setDiffImage(null);
+    setDiffPercentage(null);
+    setLocalStorageImage(null);
+    setUseLocalStorage(null);
+    setModal(null);
+  }, []);
 
 
 
@@ -166,7 +176,7 @@ return (
     </S.ImageStorage>
     <S.Range>
       <div>
-        <h1>1º → Tolerance Level:</h1>
+        <h1>1º → Diferença Aceitavel:</h1>
         <input
           type="number"
           min={0}
@@ -183,19 +193,19 @@ return (
     <button onClick={() => {
   capture();
   compareImages();
-}}>2º → Capture Image</button>
+}}>2º → Capturar Imagem</button>
   <button
     onClick={() => {
       setLocalStorageImage(localStorage.getItem("webcamImage"));
       setUseLocalStorage(!useLocalStorage);
     }}
   >
-    3º → Use Local Storage Image
+    3º → Definir como Padrão de Qualidade
   </button>
   <button onClick={() => {
   capture();
   compareImages();
-}}>4º → Compare Image</button>
+}}>4º → Inspecionar</button>
   {/* <button onClick={compareImages}>Compare Images</button>
   <button onClick={clearLocalStorage}>Limpar Local Storage</button> */}
 </S.Button>
@@ -212,6 +222,9 @@ return (
         />
       )}
     </S.Result>
+    <S.Button>
+    <button onClick={newVerification}>Nova Verificação</button>
+  </S.Button>
     <S.Modal>
   {modal && (
     <div className="modal">
@@ -229,6 +242,7 @@ return (
     </div>
   )}
 </S.Modal>
+
 
   </S.Container>
 );
